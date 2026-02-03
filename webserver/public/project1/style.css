@@ -1,0 +1,202 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.landing-bg {
+  background-attachment: fixed; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+
+#birdgif {
+position: absolute;
+   top: 20%;
+   left: 10%;
+   width: 300px;
+}
+
+#welcomegif {
+position: absolute;
+   bottom: 1em;
+   right: 2em;
+   width: 200px;
+}
+
+#intro {
+position: absolute;
+bottom:15%;
+left: 45vw;
+text-align: center;
+font-size: 16px;
+background-color: #ffffff;
+    color: #021f4e;
+}
+
+#intro a {
+background-color: #ffffff;
+color: #000000;
+font-family: sans-serif;
+font-weight: 400;
+}
+
+p {
+width: fit-content;
+background-color: #ffffff;
+color: #730537;
+font-family: sans-serif;
+font-weight: 400;
+justify-content: center;
+}
+
+#unlock {
+    position: absolute;
+    top: 10%;
+    left: 40vw;
+}
+
+#childhood {
+    position: absolute;
+    bottom: 13%;
+    right: 15%;
+}
+
+#steal {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    background-color: #ccff00;
+color: #000713;
+}
+
+#steal a{
+    background-color: #ccff00;
+color: #000713;
+}
+
+#secret {
+    position: absolute;
+    background-color: #ccff00;
+color: #000713;
+    font-family: sans-serif;
+font-weight: 400;
+text-align: center;
+font-size: 16px;
+font-style: italic;
+top: 20%;
+right: 10%
+}
+
+.secondbody {
+background-image: url('img/188.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#venezuelaflag {
+   position: absolute;
+  background-size: cover;
+  background-attachment: fixed; 
+  opacity: 50%;
+  width: 100%;
+  height: 100vh;
+}
+
+ #film {
+    position: absolute;
+  background-size: cover;
+  background-attachment: fixed; 
+  width: 100%;
+  opacity: 90%;
+  height: 100vh;
+} 
+
+#polaroidtwo {
+    position: absolute;
+width:60%;
+left: 5%;
+top: 5%;
+}
+
+#beach {
+position: absolute;
+width:20%;
+right: 5%;
+bottom: 10%;
+}
+
+#frame {
+position: absolute;
+width:22%;
+right: 4%;
+bottom: 8%;  
+}
+
+#polaroidsingle {
+position: absolute;
+width:35%;
+right: 10%;
+top: 5%;  
+}
+
+.back {
+position: absolute;
+width: 15%;
+bottom: 5%;
+left: 5%;
+}
+
+#back {
+   position: absolute;
+width: 10%;
+top: 5%;
+left: 5%; 
+}
+
+.joke{
+    background-color: #000000;
+}
+
+.nyc{
+    background-color: #000000;
+    display: flexbox;
+}
+
+.jokes{
+    padding-left: 38%;
+    padding-top: 18%;
+}
+
+#kiss{
+    padding-left: 38%;
+    padding-top: 28%;
+}
+
+#nycp {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 60%;
+    text-align: center;
+    background-color: #ccff0000;
+    color: #ffffff;
+    font-family: "Ballet", cursive;
+}
+
+#eagle {
+    position: absolute;
+    top:5%;
+    right:10%;
+    width:10%;
+}
+
+#smallnycp {
+    position: absolute;
+    bottom:5%;
+    right:7%;
+    width: 150px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
