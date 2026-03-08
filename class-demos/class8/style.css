@@ -1,0 +1,18 @@
+.parent {
+    background-color: blueviolet;
+    font-size: medium;
+    font-style: italic;
+    padding:2em;
+}
+
+.child {
+   background-color: aqua;
+   display: inline-block;
+   width: 30%;
+   height: 30%;
+   padding:100px;
+}
+
+.parent .clicked {
+    background-color: skyblue;
+}

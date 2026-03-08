@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    
+    <title>Angelica</title>
+  </head>
+  <body id="ange-body">
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+         
+          <div class="submit-container">
+            <div>
+              <label for="file-upload" class="custom-file-upload"> </label>
+              <input id="file-upload" name="theimage" type="file" />
+            </div>
+            <div>
+              <input type="submit" name="submitbutton" value="Submit" />
+            </div>
+          </div>
+      </form>
+    <div class="all-posts">
+
+        <% for(let post of clientPosts) { %>
+        <div class="post draggable">
+            <% if(post.image) { %>
+                <img src="<%=post.image %>">
+            <% } %>
+        </div>
+        <% } %>
+      </div>
+  </body>
+</html>

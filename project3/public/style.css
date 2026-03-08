@@ -1,0 +1,43 @@
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    /* font-weight: 500; */
+    font-style: italic;
+    color: brown;
+}
+
+body {
+   background-image: url("imgs/canvas.jpg");
+    background-color:rgba(251, 250, 243, 10);
+}
+
+.post {
+	width: 300px;
+    padding: 2em;
+    position: absolute;
+    z-index: 1000;
+}
+
+.post > img {
+	width: 100%;
+}
+
+.all-posts {
+    position:relative;
+    cursor: grabbing;
+    /* width: 5000px;
+    height: 5000px; */
+}
+
+.draggable {
+  touch-action: none;
+  user-select: none;
+}

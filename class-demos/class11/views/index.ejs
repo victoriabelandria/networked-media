@@ -1,0 +1,23 @@
+// use ejs instead of html
+<html>
+  <head>
+    <title>class 11</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <form method="POST" action="/makePost" enctype="multipart/form-data">
+      <input type="text" name="caption" />
+      <input type="file" name="myImage" />
+      <input type="submit" value="post!!!" />
+    </form>
+
+    <div class="posts">
+        //we use this when writing js inside an ejs file <% %>
+        <% for (let post of allPosts){ %>
+<img src="/uploads/<%= post.file %>">
+<p> <%= post.caption %></p>
+            <% } %>
+    </div>
+  </body>
+</html>
