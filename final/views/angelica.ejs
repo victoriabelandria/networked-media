@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/kgq3vgx.css">
+    <script src="angelica.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    
+    <title>Angelica</title>
+  </head>
+  <body class="member-container">
+    <div class="each-name">
+      <img src="/imgs/angelica-word.png" alt="belandria"/>
+    </div>
+
+    <div class="song-corner">
+      <p class="song-label">Escucha</p>
+      <img src="/imgs/song.gif" width="130px" id="song-gif">
+    </div>
+
+    <audio id="song">
+      <source src="/sounds/angelica.mp3" type="audio/mpeg">
+    </audio>
+<div class="navbar-container">
+  <ul class="navbar-items">
+    <!-- this takes the person to the landing page -->
+    <li>
+<a href="/">
+  <img src="/imgs/white-home.png" width="30px">
+</a>
+    </li>
+     <!-- this trigers the add a photo block -->
+    <li>
+<a href="#" id="plus-btn">
+  <img src="/imgs/plus.png" width="30px">
+</a>
+    </li>
+     <!-- this trigers the writing a comment block -->
+    <li>
+<a href="#" id="pen-btn">
+  <img src="/imgs/pen.png" width="35px">
+</a>
+    </li>
+
+  </ul>
+</div>
+
+    <div id="text-box">
+      <form method="POST" action="/upload/angelica">
+        <input type="text" name="text" maxlength="50" placeholder="Algo que decirle a Angelica" />
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+
+    <div id="upload-box">
+      <form method="POST" action="/upload/angelica" enctype="multipart/form-data">
+          <div class="submit-container">
+            <div>
+              <label for="file-upload" class="custom-file-upload"> </label>
+              <input id="file-upload" name="theimage" type="file" />
+            </div>
+            <div>
+              <input type="submit" name="submitbutton" value="Enviar" />
+            </div>
+          </div>
+      </form>
+    </div>
+    <div class="all-posts">
+        <% for(let post of clientPosts) { %>
+        <div class="post draggable">
+            <% if(post.image) { %>
+                <img src="<%=post.image %>">
+            <% } %>
+            <% if(post.text) { %>
+                <p><%=post.text %></p>
+            <% } %>
+        </div>
+        <% } %>
+      </div>
+
+    <div class="bio-section">
+      <div class="bio-line"></div>
+      <img src="/imgs/weeping-willow.png" alt="" width="100px">
+            <p class="bio-text">Sauce Lloron</p>
+      <p class="bio-text">Angelica, mi hermana, el sauce. Cada vez que veo un sauce llorón, me acuerdo de ella. Ramas largas hasta el suelo, fáciles de trepar. Es un árbol que elige verse sensible, pero no por debilidad. Angelica es un sauce porque ha crecido con la misma delicadeza y belleza, con los brazos y el corazón abiertos a recibir a cualquiera que necesite refugio. El sauce invita a todos a tocarlo. Ella, a ser entendidos. </p>
+    </div>
+
+  </body>
+</html>
