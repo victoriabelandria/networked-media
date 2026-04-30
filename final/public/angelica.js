@@ -1,0 +1,16 @@
+let images = [
+  "imgs/angelica-1.png",
+  "imgs/angelica-2.png",
+  "imgs/angelica-3.png",
+  "imgs/angelica-6.png",
+  "imgs/angelica-7.png",
+  "imgs/angelica-8.png",
+  "imgs/angelica-9.png",
+  "imgs/angelica-10.png",
+  "imgs/angelica-11.png",
+  "imgs/angelica-12.png",
+  "imgs/angelica-13.png",
+  "imgs/angelica-14.png",
+  "imgs/angelica-15.png",
+  "imgs/angelica-16.png",
+];
